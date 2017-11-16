@@ -58,11 +58,11 @@ onload="step1()" onselectstart="return false">
         <tr>
           <th class="invalid-name ">
             <lebel for="birth">생년월일<label></th>
-        <td><input type="text" id="birth" name="birthday" value="" placeholder="주민번호 앞 6자리 입력" ></td>
+        <td><input type="text" id="birth" name="birthday" value="" onkeydown="onlyNumber(this)" placeholder="주민번호 앞 6자리 입력" ></td>
       </tr>
       <tr>
         <th class="invalid-name "><label for="postcode">주소</label></th>
-          <td><input type="tel" name="postcode" id="postcode" placeholder="우편번호" required></td>
+          <td><input type="tel" name="postcode" id="postcode" onkeydown="onlyNumber(this)" placeholder="우편번호" required></td>
           <td><input type="button" id="address-button" name="address-button" onclick="Postcode()" value="검색"></td>
         <tr>
           <th></th>
@@ -87,12 +87,12 @@ onload="step1()" onselectstart="return false">
         </tr>
         <tr>
           <th class="invalid-name "><label for="password_confirm">비밀번호<br/> 확인</label>
-            <td><input type="password" id="password_confirm" name="password_confirm" value="" required></td>
+            <td><input type="password" id="password_confirm" name="password_confirm" onChange="checkPasswordMatch();"value="" required></td>
             <td><span id="confirm-message" class="err-message"></span></td>
         </tr>
         <tr>
           <th class="invalid-name "><label for="phoneNumber">연락처</label></th>
-          <td><input type="text" id="phoneNumber" name="phoneNumber" value="" placeholder="010-0000-0000">
+          <td><input type="text" id="phoneNumber" name="phoneNumber"onkeydown="onlyNumber(this)"  value="" placeholder="010-0000-0000">
           </td>
         </tr>
         <tr>&nbsp;

@@ -169,6 +169,11 @@
     font-size: 28px;
     letter-spacing: 2.8px;
   }
+  #confirm-message{
+    color: red;
+    margin-left: 40px;
+    font-size: 14px;
+  }
 
   #submit_button {
     position: absolute;
