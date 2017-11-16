@@ -1,0 +1,246 @@
+/*====헤더 부분===================*/
+  header {
+    width: 1920px;
+    height: 300px;
+    background-image: -webkit-linear-gradient(left, #df128b, #ff6f36);
+    background-image: -o-linear-gradient(left, #df128b, #ff6f36);
+    background-image: linear-gradient(to right, #df128b, #ff6f36);
+    box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 66px;
+    font-weight: 100;
+    color: white;
+  }
+
+  .logo {
+    margin: 94px 53px 93px 64px;
+    float: left;
+    width: 397px;
+    height: 113px;
+    background-image: url(../Resource/logo_register.png);
+  }
+
+  #sign-up_text {
+    position: relative;
+    top: 153px;
+    font-family: 'NanumBarunGothic';
+    font-size: 52px;
+    font-weight: 100;
+    letter-spacing: 26px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .sign-up_step {
+    position: relative;
+    left: 700px;
+    width: 265px;
+    margin-right: 100px;
+    float: left;
+    text-align: left;
+    opacity: 0.5;
+  }
+
+  #next_icon {
+    position: absolute;
+    left: 1503px;
+    top:126px;
+    width: 30px;
+    height: 48px;
+
+    background-image: url(../Resource/ic_register_next.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  .sign-up_step>h5 {
+    width: 265px;
+    height: 19px;
+    font-family: 'NanumBarunGothic';
+    font-size: 22.4px;
+    font-weight: 100;
+  }
+
+  .sign-up_step>h4 {
+    margin-top: -30px;
+    font-family: 'NanumBarunGothic';
+    font-size: 41.5px;
+  }
+
+/*====registration form ===================*/
+  .wrap {
+    float: left;
+    table-layout:fixed;
+    width: 600px;
+    height: 600px;
+  }
+#wrap1{
+  position: relative;
+  left: 210px;
+  margin-right: 500px;
+}
+#wrap2{
+  position: relative;
+
+
+}
+  .wrap th {
+    width: 173px;
+    text-align: left;
+    font-weight: 200;
+  }
+.wrap td{
+  width:210px;
+}
+
+  input[type=text], input[type=password] {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    width: 396px;
+    padding-left: 24px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px #ef4160;
+  }
+  input[type=tel] {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    width: 196px;
+    height: 80px;
+    padding-left: 24px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px #ef4160;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=radio]+label {
+    font-family: 'NanumBarunGothic';
+    font-size: 28px;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #ef4160;
+    text-align: center;
+    width: 148px;
+    height: 28px;
+    padding: 30px;
+    display: inline-block;
+    background-color: white;
+    border: solid 1px #ef4160;
+  }
+
+
+  #women_button {
+    border-radius: 5px 0 0 5px;
+  }
+
+  #men_button {
+    border-radius: 0 5px 5px 0;
+  }
+
+  input[type=radio]:checked+label {
+    width: 150px;
+    height: 30px;
+    color: #ffffff;
+    border: 0;
+    background-image: none;
+    background-image: linear-gradient(to right, #df128b, #ff6f36);
+  }
+
+  .invalid-name {
+    /*width: 51px;
+  height: 80px;*/
+    font-size: 28px;
+    letter-spacing: 2.8px;
+    color: #ef4160;
+  }
+
+  #address-button {
+    color: white;
+    width: 150px;
+    height: 80px;
+    margin-left: 60px;
+    border: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #df128b, #ff6f36);
+    font-size: 28px;
+    letter-spacing: 2.8px;
+  }
+
+  #submit_button {
+    position: absolute;
+    left: 1332px;
+    top: 955px;
+    border: 0;
+    width: 500px;
+    height: 65px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+    font-size: 22.4px;
+    letter-spacing: 2.2px;
+    text-align: center;
+    color: #ef4160;
+  }
+
+/*====register complete ===================*/
+.sign-up_complete{
+  color:#ef4160;
+display: table;
+margin: auto;
+}
+.sign-up_complete > #text1{
+  /*width: 186px;
+height: 22px;*/
+	font-size: 52px;
+letter-spacing: 5.2px;
+text-align: center;
+font-weight: 400;
+color: #ef4160;
+}
+.sign-up_complete > #text2{
+  width: 555px;
+height: 60px;
+font-size: 28px;
+font-weight: 100;
+letter-spacing: 2.8px;
+text-align: center;
+color: #ef4160;
+}
+
+.complete_check{
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  width: 192px;
+  height: 192px;
+  text-align: center;
+}
+.complete_check > #check{
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 55px;
+  width: 124px;
+height: 83px;
+background-image: url(../Resource/ic_check.png);
+}
+
+#main-button{
+  position: absolute;
+  left: 710px;
+  top: 916px;
+  color: #ef4160;
+  text-align: center;
+  width: 500px;
+	height: 65px;
+  font-size: 22.4px;
+letter-spacing: 2.2px;
+  border: 0;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+}

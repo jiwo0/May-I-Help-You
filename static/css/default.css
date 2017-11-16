@@ -1,0 +1,23 @@
+/* Full-width input fields */
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+body{
+  width: 1920px;
+  min-width: 1920px;
+  height: 1080px;
+  font-family: 'Nanum Barun Gothic';
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span,input,div{
+  font-family: 'Nanum Barun Gothic' !important;
+  font-weight: 300;
+}
+input[type=button],input[type=submit]{
+  cursor: pointer;
+}
