@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/topMenu.css">
+  <link rel="stylesheet" href="../css/map.css">
+  <title>May I Help you?</title>
+</head>
+
+<body>
+  <!-- 상단의 하얀 부분 -->
+  <section id="topMenu" class="relative">
+    <!-- 로고 -->
+    <a href="./selectLocation.ejs">
+      <article id="logo" class="float"></article>
+    </a>
+    <!-- 검색창 -->
+    <article id="search" class="relative float">
+      <form action="index.html" method="post">
+        <input type="text" name="search" class="nanumFont" placeholder="장애인 시설 검색">
+      </form>
+      <img src="../Resource/ic_actionbar_search.png" id="searchPhoto" />
+    </article>
+    <!-- 사용자 정보 -->
+    <article id="status">
+      <div id="profilePhoto" class="float"></div>
+      <div id="profileArea" class="float"></div>
+      <span id="nickname" class="relative nanumFont"><%=name%><span id="nomenclature" class="nanumFont">님</span></span>
+    </article>
+  </section>
+  <!-- 본문 -->
+  <article id="titleArea">
+    <span id="title" class="nanumFont">한국지체장애인협회 </span>
+    <span id="location" class="nanumFont"> 서울 용산</span>
+  </article>
+<section id="mapArea" class="float">
+  <div id="map"></div>
+</section>
+<section id="informationArea">
+  <span class="information1 nanumFont">이름</span>
+  <span id="titlename" class="information nanumFont">한국지체장애인협회</span><br>
+  <span class="information1 nanumFont">주소</span>
+  <span id="address" class="information nanumFont">서울시 용산구 남영동 62-5</span><br>
+  <span class="information1 nanumFont">전화번호</span>
+  <span id="tel" class="information nanumFont">02-769-4280</span><br>
+  <span class="information2 nanumFont">사이트</span>
+  <span class="information3 nanumFont">사이트를 찾을 수 없습니다</span>
+  <figure>
+
+  </figure>
+</section>
+
+
+  <!-- jQuery CDN HOST -->
+  <!-- google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 빌게이츠는 노래를 어떻게 부르는지 알아? 마이크로 소프트하게 -->
+  <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
+  <!-- CDN JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="../templates/js/default.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=20b292cd08e08b0bd048005982d52192"></script>
+  <script src="../js/map.js"></script>
+</body>
+
+</html>

@@ -95,7 +95,7 @@ input:focus~label, input:valid~label {
   color: #ffffff;
 }
 
-input[type="submit"] {
+ #login_submit{
   color: #ef4160;
   cursor: pointer;
   width: 500px;

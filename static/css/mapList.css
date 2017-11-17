@@ -1,0 +1,51 @@
+/*목록 영역*/
+section#placeList{
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+section#placeList article.place{
+}
+  /*지역 title*/
+section#placeList>div#title{
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ef4160;
+}
+  /*목록 요소*/
+section#placeList li{
+  position: relative;
+  font-size: 28px;
+  color: #ef4160;
+  list-style: none;
+}
+    /*목록 아이콘*/
+section#placeList li:before{
+  position: relative;
+  top: 85px;
+  left: -70px;
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+  background-image: url('../img/help-button.png');
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+  /*복지관 이름*/
+section#placeList h2{
+    color: #ef4160;
+    font-size: 32px;
+}
+section#placeList h2:hover{
+  cursor: pointer;
+}
+section#placeList p{
+  margin-left: 40px;
+}

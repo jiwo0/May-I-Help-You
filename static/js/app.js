@@ -53,8 +53,10 @@ function onLogin() {
       "id": id,
       "password": password
     },
-    success: onSuccess,
-    error: onFail
+    success: function (json,stauts) {
+
+    }
+    error: onError
   });
 }
 

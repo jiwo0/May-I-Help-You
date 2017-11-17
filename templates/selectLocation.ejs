@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/selectLocation.css">
+  <link rel="stylesheet" href="../css/topMenu.css">
+  <title>May I Help you?</title>
+</head>
+
+<body>
+  <!-- 상단의 하얀 부분 -->
+  <section id="topMenu" class="relative">
+    <!-- 로고 -->
+    <article id="logo" class="float"></article>
+    <!-- 검색창 -->
+    <article id="search" class="relative float">
+      <form action="index.html" method="post">
+        <input type="text" name="search" class="nanumFont" placeholder="장애인 시설 검색">
+      </form>
+      <img src="../img/ic_actionbar_search.png" id="searchPhoto"/>
+    </article>
+    <!-- 사용자 정보 -->
+    <article id="status">
+      <div id="profilePhoto" class="float"></div>
+      <div id="profileArea" class="float"></div>
+      <span id="nickname" class="relative nanumFont"><%name%><span id="nomenclature" class="nanumFont">님</span></span>
+    </article>
+  </section>
+  <!-- 회색 배경 본문 -->
+  <section id="mainContent" class="relative">
+    <!-- 지역 지도 영역 -->
+    <article id="containerAdminMap" class="float relative">
+      <img id="adminMap" src="../img/SeoulMap.jpg"/>
+      <div id="adminMapMarker"></div>
+    </article>
+    <!-- 지역 목록 영역-->
+    <section id="selectLocation" class="float">
+      <!-- 지역 목록 상단 -->
+      <article id="topLocationMenu">
+        <span id="location">서울시</span>
+        <span id="findLocation">지역 시설 찿기</span>
+      </article>
+      <!-- 지역 목록 -->
+      <article id="list">
+        <ul>
+        <li class="nanumFont list float" data-selected="0">강남구</li>
+        <li class="nanumFont list float" data-selected="0">강동구</li>
+        <li class="nanumFont list float" data-selected="0">강북구</li>
+        <li class="nanumFont list float" data-selected="0">강서구</li>
+        <li class="nanumFont list float" data-selected="0">관악구</li>
+        <li class="nanumFont list float" data-selected="0">광진구</li>
+        <li class="nanumFont list float" data-selected="0">구로구</li>
+        <li class="nanumFont list float" data-selected="0">금천구</li>
+        <li class="nanumFont list float" data-selected="0">노원구</li>
+        <li class="nanumFont list float" data-selected="0">도봉구</li>
+        <li class="nanumFont list float" data-selected="0">동대문구</li>
+        <li class="nanumFont list float" data-selected="0">동작구</li>
+        <li class="nanumFont list float" data-selected="0">마포구</li>
+        <li class="nanumFont list float" data-selected="0">서대문구</li>
+        <li class="nanumFont list float" data-selected="0">서초구</li>
+        <li class="nanumFont list float" data-selected="0">성북구</li>
+        <li class="nanumFont list float" data-selected="0">성동구</li>
+        <li class="nanumFont list float" data-selected="0">송파구</li>
+        <li class="nanumFont list float" data-selected="0">양천구</li>
+        <li class="nanumFont list float" data-selected="0">영등포구</li>
+        <li class="nanumFont list float" data-selected="1">용산구</li>
+        <li class="nanumFont list float" data-selected="0">은평구</li>
+        <li class="nanumFont list float" data-selected="0">종로구</li>
+        <li class="nanumFont list float" data-selected="0">중구</li>
+        <li class="nanumFont list float" data-selected="0">중랑구</li>
+        <li class="nanumFont list float" data-selected="0"></li>
+        <li class="nanumFont list float" data-selected="0"></li>
+      </ul>
+    </article>
+    </section>
+    <!-- 장애인 버튼 영역 -->
+    <article id="choiceFacilities" class="float">
+      <!-- 지역 이름 -->
+      <span id="locationDo" class="nanumFont">서울</span>
+      <span id="locationGu" class="nanumFont">용산</span>
+      <!-- 버튼 -->
+      <button id="facilitiesCenter" onclick="clickCenter()">장애인 관련 센터</button>
+      <button id="facilities" onclick="clickFacility()">장애인 관련 편의시설</button>
+    </article>
+  </section>
+  <!-- jQuery CDN HOST -->
+  <!-- google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 빌게이츠는 노래를 어떻게 부르는지 알아? 마이크로 소프트하게 -->
+  <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
+  <!-- CDN JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- 서버로 닉네임 연동 -->
+  <script src="../js/default.js"></script>
+<!-- 지역 목록 -->
+  <script src="../js/selectLocation.js"></script>
+</body>
+
+</html>

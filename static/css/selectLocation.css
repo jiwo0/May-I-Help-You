@@ -1,0 +1,122 @@
+/*본문*/
+#mainContent{
+  width: 1920px;
+  height: 940px;
+}
+  /*지역 지도 영역*/
+#mainContent>article#containerAdminMap{
+  width: 560px;
+  height: 820px;
+  margin-top: 60px;
+  margin-right: 70px;
+  margin-left: 63px;
+  border: solid 2px #ef4160;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    /*마커*/
+#mainContent>article#containerAdminMap>div#adminMapMarker{
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: blue;
+  position: absolute;
+  top: 430px;
+}
+  /*지역 목록 영역*/
+#mainContent>section#selectLocation{
+  width: 540px;
+  height: 820px;
+  margin-top: 45px;
+  margin-right: 80px;
+}
+    /*도 단위 지역(굵은글씨)*/
+#mainContent>section#selectLocation>article#topLocationMenu>span#location{
+  margin-left: 13px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ef4664;
+}
+    /* "지역 시설 찾기" */
+#mainContent>section#selectLocation>article#topLocationMenu>span#findLocation{
+  margin-left: 13px;
+  font-size: 33px;
+  font-weight: 300;
+  color: #ef4664;
+}
+    /*지역 목록 영역*/
+#mainContent>section#selectLocation>article#list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+      /*지역 목록 요소*/
+#mainContent>section#selectLocation>article#list li.list{
+  width: 130px;
+  height: 50px;
+  margin: 0 10px 0 0;
+  padding-top: 20px;
+  font-size: 28px;
+  color: #ef4160;
+  list-style: none;
+  text-align: center;
+  background-color: white;
+}
+  /*시설 선택 버튼 영역*/
+#mainContent>article#choiceFacilities{
+  width: 523px;
+  height: 820px;
+
+  margin-top: 50px;
+}
+    /*상단 지역 안내문*/
+      /*도 단위 지역(굵은글씨)*/
+#mainContent>article#choiceFacilities>span#locationDo{
+  margin-right: 53px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ef4664;
+}
+      /* 작은 단위 지역(작은글씨)*/
+#mainContent>article#choiceFacilities>span#locationGu{
+  font-size: 36px;
+  color: #ef4160;
+}
+    /*"장애인 관련 센터" 버튼*/
+#mainContent>article#choiceFacilities>button#facilitiesCenter{
+  width: 520px;
+  height: 100px;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  margin-left: 3px;
+  color: #ef4160;
+  font-size: 28px;
+  letter-spacing: 2.8px;
+  border: solid 1px #ef4160;
+  border-radius: 5px;
+  background-color: white;
+}
+    /*"장애인 관련 편의시설" 버튼*/
+#mainContent>article#choiceFacilities>button#facilities{
+  width: 520px;
+  height: 100px;
+  margin-right: 3px;
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 2.8px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right,#df128b,#ff6f36);
+}
+      /*버튼 blur 지우기*/
+#mainContent>article#choiceFacilities>button:focus, #mainContent>article#choiceFacilities>button:active {
+  outline: none;
+}
+      /* 버튼 클릭 표시 */
+#mainContent>article#choiceFacilities>button:hover, #mainContent>article#choiceFacilities>button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: NanumBarunGothic;
+  src: url(../font/NanumBarunGothic.ttf) format('truetype');
+}
+.float {
+  float: left;
+}
+
+.relative {
+  /*position absoulte의 기준이 될 요소*/
+  position: relative;
+}
+
+.nanumFont {
+  font-family: 'NanumBarunGothic';
+  text-align: left;
+}
+/* 개발용, 테두리 추가 */
+.test{
+  border: 1px solid black;
+}
+
+html {
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  margin: 0 0;
+}
+/*상단메뉴*/
+#topMenu{
+  width: auto;
+  height: 140px;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.1);
+}
+/*로고*/
+#topMenu article#logo {
+  width: 248px;
+  height: 70px;
+  margin-top: 35px;
+  margin-left: 64px;
+  margin-right: 100px;
+  background-image: url("../img/logo_actionbar.png");
+}
+/*검색창 영역*/
+#topMenu>article#search {
+  width: 473px;
+  height: 58px;
+  padding-left: 25px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: solid 1px #ef4160;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  /*검색 아이콘*/
+#topMenu>article#search>img#searchPhoto {
+  margin-right: 5px;
+}
+  /*검색창*/
+#topMenu>article#search input {
+  width: auto;
+  height: auto;
+  border: none;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  text-align: left;
+  outline: none;
+  /* 세로 중앙 정렬 */
+  position: relative;
+  top: 2px;
+}
+/*사용자정보*/
+#topMenu>article#status {
+  width: 280px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+  /*프로필사진*/
+#topMenu>article#status>div#profilePhoto {
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/pic_profile.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  z-index: 1;
+}
+  /*프로필배경색*/
+#topMenu>article#status>div#profileArea {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right,#df128b,#ff6f36);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  /*이름 공통속성*/
+#topMenu>article#status>span {
+  font-size: 28px;
+  color: #ef4664;
+  letter-spacing: 2.8px;
+}
+    /*이름*/
+#topMenu>article#status>span#nickname {
+  top : 15px;
+  left : 100px;
+  font-weight: bold;
+}
+    /*이름 뒤 호칭*/
+#topMenu>article#status>span#nickname>span#nomenclature {
+  font-weight: normal;
+}

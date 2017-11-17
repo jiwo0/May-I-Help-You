@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/topMenu.css">
+  <link rel="stylesheet" href="../css/mapList.css">
+  <title>May I Help you?</title>
+</head>
+
+<body>
+  <!-- 상단의 하얀 부분 -->
+  <section id="topMenu" class="relative">
+    <!-- 로고 -->
+    <a href="./selectLocation.ejs">
+      <article id="logo" class="float"></article>
+    </a>
+    <!-- 검색창 -->
+    <article id="search" class="relative float">
+      <form action="index.html" method="post">
+        <input type="text" name="search" class="nanumFont" placeholder="장애인 시설 검색">
+      </form>
+      <img src="../img/ic_actionbar_search.png" id="searchPhoto" />
+    </article>
+    <!-- 사용자 정보 -->
+    <article id="status">
+      <div id="profilePhoto" class="float"></div>
+      <div id="profileArea" class="float"></div>
+      <span id="nickname" class="relative nanumFont"><%name%><span id="nomenclature" class="nanumFont">님</span></span>
+    </article>
+  </section>
+  <!-- 본문 -->
+  <section id="placeList">
+    <div id="title" class="nanumFont">서울 용산</div>
+    <ul>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">(사단)서울기능장애인협회 용산구 지부</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 한강로3가 65-239</p>
+          <p class="nanumFont">전화번호 : 02-792-5042</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+          <h2 class="nanumFont" onclick="choice(this)">용산구립장애인보호작업장</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 갈월동 71-20</p>
+          <p class="nanumFont">전화번호 : 02-706-4341</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">용산수화통역센터</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 이태원동 116-3</p>
+          <p class="nanumFont">전화번호 : 02-706-8365</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">용산장애인복지관</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 효창동 3-268</p>
+          <p class="nanumFont">전화번호 : 02-707-1970</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">한국장애인직업재활시설협회</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 </p>
+          <p class="nanumFont">전화번호 : 02-921-5053</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">한국지체장애인협회 용산구지회</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 갈월동 71-20</p>
+          <p class="nanumFont">전화번호 : 02-711-7882</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont" onclick="choice(this)">(사단)한국참여자치장애인총연합회</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 한강로2가 80-2</p>
+          <p class="nanumFont">전화번호 : 02-701-0987</p>
+        </article>
+      </li>
+      <li>
+        <article class="place">
+            <h2 class="nanumFont">효창종합사회복지관</h2>
+          <p class="nanumFont">주소 : 서울특별시 용산구 효창동 5-65</p>
+          <p class="nanumFont">전화번호 : 02-716-0600</p>
+        </article>
+      </li>
+    </ul>
+  </section>
+<script src="../js/mapList.js">
+
+</script>
+  <!-- jQuery CDN HOST -->
+  <!-- google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 빌게이츠는 노래를 어떻게 부르는지 알아? 마이크로 소프트하게 -->
+  <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
+  <!-- CDN JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="../js/default.js"></script>
+</body>
+
+</html>

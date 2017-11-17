@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $.ajax("http://api.vworld.kr/req/data",{
+        success : function (data) {
+          $('body').append((data)).toString();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
